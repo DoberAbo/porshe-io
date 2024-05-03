@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка билетов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/pokupka_biletov.css">
+    <link href="https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Shippori+Antique+B1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            font-family: 'Mulish';
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        input[type="text"]:disabled {
+            background-color: #eee;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 379px;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 2%;
+        }
+
+        .input-group_3 {
+            width: 400px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn:last-child {
+            margin-right: 0;
+        }
+
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            position: absolute;
+            width: 390px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .strelka {
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .strelka img {
+            width: 25px;
+            margin-top: 5px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="strelka">
+      <a href="../car_models_12/Myzei.html"><img src="../img/aqaqaq_2 (1).png" alt=""></a>  
+    </div>
+    <div class="container">
+
+        <div class="success-message" id="successMessage">
+            Билеты успешно куплены!
+        </div>
+    </div>
+    <div class="container">
+        <h1>Покупка билетов</h1>
+        <form id="ticketForm">
+            <div class="input-group">
+                <label for="firstName">Имя:</label>
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Фамилия:</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+            <div class="input-group_3">
+                <label for="time">Выберите время:</label>
+                <select name="time" id="time">
+                    <option value="10:00">10:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="18:00">18:00</option>
+                </select>
+                <input class="date" type="date">
+            </div>
+            <div class="input-group">
+                <label for="ticketType">Тип билета:</label>
+                <select name="ticketType" id="ticketType">
+                    <option value="adult">Взрослый</option>
+                    <option value="child">Детский</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="quantity">Количество билетов:</label>
+                <input type="number" name="quantity" id="quantity" min="1" max="10" required>
+            </div>
+            <div class="input-group">
+                <label for="price">Цена за билет:</label>
+                <input type="text" name="price" id="price" readonly>
+            </div>
+            <div class="input-group">
+                <label for="cardNumber">Номер карты:</label>
+                <input type="text" name="cardNumber" id="cardNumber" required>
+            </div>
+            <div class="input-group">
+                <label for="expiryDate">Срок действия:</label>
+                <input type="text" name="expiryDate" id="expiryDate" required placeholder="ММ/ГГ">
+            </div>
+            <div class="input-group">
+                <button type="button" id="calculate" class="btn">Рассчитать</button>
+                <button type="reset" class="btn">Сбросить</button>
+            </div>
+        </form>
+        <div class="result" id="result"></div>
+        <button id="buyBtn" class="btn" style="width: 780px;">Купить билеты</button>
+    </div>
+
+    <script>
+        document.getElementById('calculate').addEventListener('click', function () {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            var ticketType = document.getElementById('ticketType').value;
+            var pricePerTicket = ticketType === 'adult' ? 10000 : 5000;
+            var totalPrice = quantity * pricePerTicket;
+            document.getElementById('price').value = totalPrice + ' тенге';
+            document.getElementById('result').textContent = 'Общая стоимость: ' + totalPrice + ' тенге';
+        });
+
+        document.getElementById('buyBtn').addEventListener('click', function () {
+
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+
+            if (validateCard(cardNumber) && validateExpiryDate(expiryDate)) {
+
+                alert('Билеты успешно куплены!');
+            } else {
+                alert('Пожалуйста, введите корректные данные карты!');
+            }
+        });
+
+        function validateCard(cardNumber) {
+
+            return /^\d{16}$/.test(cardNumber);
+        }
+
+        function validateExpiryDate(expiryDate) {
+
+            return /^\d{2}\/\d{2}$/.test(expiryDate);
+        }
+    </script>
+
+    <script>
+        document.getElementById('buyBtn').addEventListener('click', function () {
+
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+
+            if (validateCard(cardNumber) && validateExpiryDate(expiryDate)) {
+
+                var successMessage = document.getElementById('successMessage');
+                successMessage.classList.add('show');
+
+
+                setTimeout(function () {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            } else {
+                alert('Пожалуйста, введите корректные данные карты!');
+            }
+        });
+    </script>
+
+</html>

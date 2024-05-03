@@ -1,0 +1,218 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon_1 {
+    text-align-last: center;
+    margin-top: -25px;
+}
+
+.icon_img {
+    width: 150px;
+}
+
+.main_img {
+    width: 1903px;
+    margin-top: -25px;
+}
+
+.linia {
+    width: 1903px;
+    height: 120px;
+    background: #d6dbdf82;
+}
+
+.linia h1 {
+    margin-left: 205px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    margin-top: 31px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.container_1 {
+    width: 717px;
+    font-size: 15px;
+    margin-left: 205px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container_2 h3 {
+    font-weight: 700;
+}
+
+.selection_1 {
+    width: 1610px;
+    margin-left: 205px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.selection_2 {
+    width: 840px;
+    font-family: system-ui;
+}
+
+.selection_2_h1 {
+    margin-bottom: -25px;
+    font-size: 25px;
+}
+
+.selection_2_h2 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: -1px;
+}
+
+.selection_3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    width: 500px;
+    font-weight: 500;
+    margin-left: 205px;
+    margin-top: 114px;
+}
+
+.selection_3 img {
+    width: 500px;
+}
+
+.p_main {
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+.p_big {
+    font-weight: 500;
+}
+
+.karta_1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.karta_3 {
+    text-align: center;
+}
+.karta_3 img {
+    width: 1000px;
+    border: 2px solid;
+}
+
+.karta_2 {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.hr {
+    width: 1305px;
+    margin-left: 340px;
+    size: 5px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+
+}
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteiner_footer {
+    display: flex;
+    place-content: center;
+}
+
+.text_footer {
+    padding: 40px;
+    margin-left: 60px;
+}
+
+.footer_h1 {
+    font-size: 10px;
+    margin-left: 18px;
+    margin-bottom: -10px;
+}
+
+.footer_a :hover {
+    color: #ff0000;
+    -moz-transform: scale(1.1);
+    transform: scale(1.0);
+}
+
+.footer_a {
+    display: grid;
+    padding: 10px;
+    margin-top: 13px;
+}
+
+.footer_a_a {
+    text-decoration: none;
+    padding: 10px;
+    color: #494e51;
+    font-family: 'Mulish';
+}
+.main_footer_buuton {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -1px;
+
+}
+
+.facebook_button {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.instagram_instagram {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.facebook_tiktok {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.x_button {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.main_footer_buuton :hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.footer_h4 {
+    margin-left: 338px;
+    font-weight: 500;
+    font-family: system-ui;
+}
+.podrobne {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.h4 {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    margin-bottom: -70px;
+    color: #494e51;
+}
+
+.linia_4 {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 120px;
+    background: #d6dbdf82;
+}
+

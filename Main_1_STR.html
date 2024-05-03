@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main_str_1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Shippori+Antique+B1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 1500px;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 200px;
+            overflow: hidden;
+            margin-bottom: 100px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            position: relative;
+            flex: 0 0 33.333%;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+            margin-left: 7px;
+        }
+
+        .next {
+            margin-right: -11px;
+        }
+    </style>
+
+    <!-- <header>
+    <img class="x_1" src="../img/x_1.jpg" alt="">
+</header> -->
+
+    <div class="nadp">
+        <h1>Автомобили в наличии</h1>
+    </div>
+    <div class="carousel-container" onmouseover="stopCarousel()" onmouseout="startCarousel()">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img class="pimg" src="../img/be_1.webp" alt="Photo 1">
+                <div class="caption"><img class="img_white" src="../img/white_arrow.png" alt=""> 911 модели</div>
+            </div>
+            <div class="carousel-item">
+                <img class="pimg" src="../img/be_2.webp" alt="Photo 2">
+                <div class="caption"> <img class="img_white" src="../img/white_arrow.png" alt=""> Taycan модели</div>
+            </div>
+            <div class="carousel-item">
+                <img class="pimg" src="../img/be_3.webp" alt="Photo 3">
+                <div class="caption"> <img class="img_white" src="../img/white_arrow.png" alt=""> 718 модели</div>
+            </div>
+            <div class="carousel-item">
+                <img class="pimg" src="../img/be_4.webp" alt="Photo 4">
+                <div class="caption"> <img class="img_white" src="../img/white_arrow.png" alt=""> Macan модели</div>
+            </div>
+            <div class="carousel-item">
+                <img class="pimg" src="../img/be_5.webp" alt="Photo 5">
+                <div class="caption"> <img class="img_white" src="../img/white_arrow.png" alt=""> Panamera модели</div>
+            </div>
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()"><img class="lolo" src="../img/aqaqaq_2 (1).png"
+                alt=""></button>
+        <button class="carousel-btn next" onclick="nextSlide()"><img class="lolo" src="../img/aqaqaq_2 (2).png"
+                alt=""></button>
+    </div>
+    <h1 class="gallery">Галерея</h1>
+    <div class="main_nono">
+        <div class="nono">
+            <div class="q">
+                <div class="nono_2">
+                    <img class="p_3" src="../img/p_3.webp" alt="">
+                    <img class="p_4" src="../img/p_5.webp" alt="">
+                </div>
+                <div class="nono_1">
+                    <img class="p_2" src="../img/p_1.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="nono">
+
+            <div class="q">
+                <div class="nono_1">
+                    <img class="p_2_2" src="../img/p_4.webp" alt="">
+                </div>
+                <div class="nono_2">
+                    <img class="p_3" src="../img/p_2.webp" alt="">
+                    <img class="p_4" src="../img/p_6.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div class="av">
+
+    <h1 class="h1_model">Модель</h1>
+    <div class="main_i">
+        <div class="i_1 wow animate__backInUp">
+            <div class="i_2">
+                <img class="i_img_1" src="../img/m_1.webp" alt="">
+                <p class="i_p_1">
+                    Что делает модели 718 такими особенными? Их производительность, дизайн, неповторимые технологии модели GT в двухместном автомобиле </p>
+                <p class="i_p_2">Все о 718 модели</p>
+                <p class="i_p_2_1">Конфигуратор</p>
+            </div>
+        </div>
+        <div class="i_1 wow animate__backInUp">
+            <div class="i_2">
+                <img class="i_img_1" src="../img/m_2.webp" alt="">
+                <p class="i_p_1">
+                    Абсолютным лидером с совокупным рейтингом 91% оказался Porsche 911, в рейтинг самый привлекательный автомобиль </p>
+                <p class="i_p_2">Все о 718 модели</p>
+                <p class="i_p_2_2">Конфигуратор</p>
+            </div>
+        </div>
+    </div>
+    <div class="pl">
+        <div class="main_i">
+            <div class="i_1 wow animate__backInUp">
+                <div class="i_2">
+                    <img class="i_img_1" src="../img/NONO_2.png" alt="">
+                    <p class="i_p_1">
+                        Что делает модели 718 такими особенными? Их производительность, дизайн, неповторимые технологии модели GT в двухместном автомобиле </p>
+                    <p class="i_p_2">Все о Panamera</p>
+                    <p class="i_p_2_1">Конфигуратор</p>
+                </div>
+            </div>
+            <div class="i_1 wow animate__backInUp">
+                <div class="i_2">
+                    <img class="i_img_1" src="../img/NONO_1.png" alt="">
+                    <p class="i_p_1">
+                        Абсолютным лидером с совокупным рейтингом 91% оказался Porsche 911, в рейтинг самый привлекательный автомобиль </p>
+                    <p class="i_p_2">Все о Taycan</p>
+                    <p class="i_p_2_2">Конфигуратор</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="top"></div>
+</body>
+
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+
+    const carousel = document.querySelector('.carousel');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+    let intervalId;
+
+    function startCarousel() {
+        intervalId = setInterval(() => {
+            nextSlide();
+        }, 4000);
+    }
+
+    function stopCarousel() {
+        clearInterval(intervalId);
+    }
+
+    function prevSlide() {
+        if (currentIndex === 0) {
+            currentIndex = carouselItems.length - 3;
+        } else {
+            currentIndex--;
+        }
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        if (currentIndex === carouselItems.length - 3) {
+            currentIndex = 0;
+        } else {
+            currentIndex++;
+        }
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        const itemWidth = carouselItems[currentIndex].offsetWidth;
+        carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    window.onload = function () {
+        startCarousel();
+    };
+    
+</script>
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</html>
